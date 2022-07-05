@@ -1,0 +1,45 @@
+.login-container {
+  padding-top: 50px;
+}
+
+.container {
+  height: 100%;
+  align-content: center;
+}
+
+.card {
+  height: 370px;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 400px;
+  background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.card-header h3 {
+  color: white;
+}
+
+label {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+body {
+  background: #d1b0c0;
+}
+
+.error-msg {
+  color: rgb(248, 242, 242);
+  font-size: 14px;
+}
+
+.login-icon {
+  margin: 10px 0 0px 8px;
+  position: absolute;
+  color: #9d8c8c;
+}
+
+.padding-left30px {
+  padding-left: 30px;
+}

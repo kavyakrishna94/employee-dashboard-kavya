@@ -1,0 +1,18 @@
+.add-task {
+  padding-left: 45px;
+  font-size: 25px;
+  padding-top: 20px;
+  font-weight: 700;
+}
+
+.btn-cancel {
+  float: right;
+}
+
+.action-btn {
+  padding-top: 20px;
+}
+
+.task-desc {
+  padding-top: 30px;
+}

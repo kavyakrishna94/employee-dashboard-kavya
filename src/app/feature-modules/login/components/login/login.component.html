@@ -1,0 +1,88 @@
+<!-- <div class="row">
+  <div class="col-md-4 col-sm-12"></div>
+  <div class="col-md-4 col-sm-12">
+    <div class="login-container">
+      <form name="loginForm" [formGroup]="loginForm">
+        <div class="form-outline mb-4">
+          <input
+            type="text"
+            id="userName"
+            formControlName="userName"
+            class="form-control"
+          />
+          <label class="form-label" for="userName">User Name</label>
+        </div>
+        <div class="form-outline mb-4">
+          <input
+            type="password"
+            id="password"
+            formControlName="password"
+            class="form-control"
+          />
+          <label class="form-label" for="password">Password</label>
+        </div>
+
+        <button
+          type="button"
+          class="btn btn-primary btn-block mb-4"
+          (click)="validateUser()"
+          [disabled]="!loginForm.valid"
+        >
+          Sign in
+        </button>
+      </form>
+    </div>
+  </div>
+  <div class="col-md-4 col-sm-12"></div>
+</div> -->
+
+<div class="container">
+  <div class="d-flex justify-content-center h-100">
+    <div class="card">
+      <div class="card-header">
+        <h3>Sign In</h3>
+      </div>
+      <div class="card-body">
+        <form name="loginForm" [formGroup]="loginForm">
+          <div class="form-outline mb-4">
+            <span class="login-icon">
+              <fa-icon [icon]="userIcon"></fa-icon>
+            </span>
+            <input
+              type="text"
+              id="userName"
+              formControlName="userName"
+              class="form-control padding-left30px"
+            />
+            <label class="form-label" for="userName">User Name</label>
+          </div>
+          <div class="form-outline mb-4">
+            <span class="login-icon">
+              <fa-icon [icon]="passIcon"></fa-icon>
+            </span>
+            <input
+              type="password"
+              id="password"
+              formControlName="password"
+              class="form-control padding-left30px"
+            />
+            <label class="form-label" for="password">Password</label>
+          </div>
+
+          <button
+            type="button"
+            class="btn btn-primary btn-block mb-4"
+            (click)="validateUser()"
+            [disabled]="!loginForm.valid"
+          >
+            Sign in
+            <fa-icon [icon]="signinIcon"></fa-icon>
+          </button>
+          <div class="error-msg" *ngIf="loginErrorMsg">
+            Username or Password is incorrect
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

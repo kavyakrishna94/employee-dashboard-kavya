@@ -1,0 +1,31 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'ag-grid-community/dist/styles/ag-grid.css';
+@import 'ag-grid-community/dist/styles/ag-theme-alpine.css';
+
+.float-right {
+  float: right;
+}
+
+.main-container {
+  padding: 20px 0 0 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #e5e5e7;
+}
+
+.count {
+  display: inline-block;
+  min-width: 10px;
+  padding: 3px 7px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  background-color: #777;
+  border-radius: 10px;
+}

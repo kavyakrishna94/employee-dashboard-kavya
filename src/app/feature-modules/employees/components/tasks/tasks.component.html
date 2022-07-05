@@ -1,0 +1,42 @@
+<div class="row">
+  <div class="col-md-1"></div>
+  <div class="col-md-10">
+    <div class="row">
+      <div class="col-md-10">
+        <h2>
+          <fa-icon [icon]="taskIcon"></fa-icon>
+          Employee Tasks<span class="count">{{ taskData?.length }}</span>
+        </h2>
+      </div>
+      <div class="col-md-2">
+        <a [routerLink]="['employees']"
+          ><button type="button" class="btn btn-light">
+            <fa-icon [icon]="backIcon"></fa-icon>
+          </button>
+        </a>
+        <button
+          type="button"
+          class="btn btn-light btn-block mb-4 float-right"
+          (click)="openAddTask(addTaskPopup)"
+        >
+          Add Task
+        </button>
+      </div>
+    </div>
+    <ag-grid-angular
+      style="width: 75%; height: 500px"
+      class="ag-theme-alpine"
+      [rowData]="taskData"
+      [columnDefs]="columnDefs"
+      (gridReady)="onGridReady($event)"
+      [pagination]="true"
+      [paginationPageSize]="10"
+    >
+    </ag-grid-angular>
+  </div>
+  <div class="col-md-1"></div>
+</div>
+
+<ng-template #addTaskPopup let-modal>
+  <app-add-task class="add-task"></app-add-task>
+</ng-template>

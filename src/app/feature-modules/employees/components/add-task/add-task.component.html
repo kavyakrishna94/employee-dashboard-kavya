@@ -1,0 +1,43 @@
+<div class="row add-task">
+  <div class="col-md-12">Add Task</div>
+</div>
+<div class="row">
+  <div class="col-md-1"></div>
+  <div class="col-md-10 task-desc">
+    <form name="newTaskForm" [formGroup]="newTaskForm">
+      <div class="form-group">
+        <textarea
+          formControlName="taskDesc"
+          class="form-control"
+          name="taskDesc"
+          id="exampleFormControlTextarea1"
+          rows="3"
+          placeholder="Enter task description here..."
+        ></textarea>
+      </div>
+    </form>
+  </div>
+  <div class="col-md-1"></div>
+</div>
+<div class="row action-btn">
+  <div class="col-md-3"></div>
+  <div class="col-md-3"></div>
+  <div class="col-md-3 btn-cancel">
+    <button
+      type="button"
+      class="btn btn-light btn-block mb-4 float-right"
+      (click)="closeModal()"
+    >
+      Cancel
+    </button>
+  </div>
+  <div class="col-md-3">
+    <button
+      type="button"
+      class="btn btn-primary btn-block mb-4"
+      (click)="submitDesc()"
+    >
+      Submit
+    </button>
+  </div>
+</div>
